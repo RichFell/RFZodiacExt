@@ -10,7 +10,7 @@
 		9B1FC4FE1AAA063200CB3FFC /* RFZodiacExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1FC4FD1AAA063200CB3FFC /* RFZodiacExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B1FC5041AAA063300CB3FFC /* RFZodiacExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1FC4F81AAA063200CB3FFC /* RFZodiacExt.framework */; };
 		9B1FC50B1AAA063300CB3FFC /* RFZodiacExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FC50A1AAA063300CB3FFC /* RFZodiacExtTests.swift */; };
-		9B1FC5151AAA065B00CB3FFC /* NSDateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FC5141AAA065B00CB3FFC /* NSDateExt.swift */; };
+		9B1FC5151AAA065B00CB3FFC /* RFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FC5141AAA065B00CB3FFC /* RFExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		9B1FC5031AAA063300CB3FFC /* RFZodiacExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFZodiacExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1FC5091AAA063300CB3FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1FC50A1AAA063300CB3FFC /* RFZodiacExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFZodiacExtTests.swift; sourceTree = "<group>"; };
-		9B1FC5141AAA065B00CB3FFC /* NSDateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExt.swift; sourceTree = "<group>"; };
+		9B1FC5141AAA065B00CB3FFC /* RFExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFExtensions.swift; sourceTree = "<group>"; };
 		9B1FC5161AAA07AA00CB3FFC /* ZodiacPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ZodiacPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9B1FC4FD1AAA063200CB3FFC /* RFZodiacExt.h */,
-				9B1FC5141AAA065B00CB3FFC /* NSDateExt.swift */,
+				9B1FC5141AAA065B00CB3FFC /* RFExtensions.swift */,
 				9B1FC4FB1AAA063200CB3FFC /* Supporting Files */,
 			);
 			path = RFZodiacExt;
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B1FC5151AAA065B00CB3FFC /* NSDateExt.swift in Sources */,
+				9B1FC5151AAA065B00CB3FFC /* RFExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +404,7 @@
 				9B1FC5101AAA063300CB3FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B1FC5111AAA063300CB3FFC /* Build configuration list for PBXNativeTarget "RFZodiacExtTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +413,7 @@
 				9B1FC5131AAA063300CB3FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

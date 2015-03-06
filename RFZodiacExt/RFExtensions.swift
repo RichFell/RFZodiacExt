@@ -48,6 +48,25 @@ enum Animal : Int {
         }
     }
 
+    func strengths()->String {
+        switch self {
+        case .Rat:
+            return "People under this sign are usually smart and wealthy and will work for success. They are sanguine and very adaptable, being popular with others. Rat girls have a flair for cleanliness and tidiness. They are clever and adorable, personable and materialistic. They are also by nature thoughtful, sensible, judiciously and curious. "
+        case .Ox:
+            return " "
+        }
+    }
+    func weaknesses()->String {
+        switch self {
+        case Rat:
+            return "They are usually timid, lack of concentration and stability. They are in need of courage introspection, principles and responsibility. The do not look authoritatively, incapable of assuming a leading position. They stick fast and refused to be influenced. They are easily guided only by their private interests. They have natural goodness but look unpolite. They are also iobstinate and selfish. They are likely to speculate and they profess their greed as a virtue."
+        }
+    }
+
+    func luckyColors()-> String {
+        
+    }
+
     //TODO: Add in the description of the different animal years.
 }
 
