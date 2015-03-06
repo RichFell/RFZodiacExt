@@ -12,7 +12,7 @@ import Foundation
 /**
 Enum Related to the Chinese Animals.
 */
-enum Animal : Int {
+public enum Animal : Int {
     case Rat
     case Ox
     case Tiger
@@ -31,7 +31,7 @@ enum Animal : Int {
 
     :returns: the String value for the Animal type
     */
-    func string()->String {
+    public func string()->String {
         switch self {
             case .Rat: return "Rat"
             case .Ox: return "Ox"
@@ -54,7 +54,7 @@ enum Animal : Int {
 
     :returns: The String explaining the personality strengths for the Animal
     */
-    func strengths()->String {
+    public func strengths()->String {
         switch self {
         case .Rat:
             return "People under this sign are usually smart and wealthy and will work for success. They are sanguine and very adaptable, being popular with others. Rat girls have a flair for cleanliness and tidiness. They are clever and adorable, personable and materialistic. They are also by nature thoughtful, sensible, judiciously and curious. "
@@ -88,7 +88,7 @@ enum Animal : Int {
 
     :returns: The string write-up of the Animal type's personality weaknesses
     */
-    func weaknesses()->String {
+    public func weaknesses()->String {
         switch self {
         case Rat:
             return "They are usually timid, lack of concentration and stability. They are in need of courage introspection, principles and responsibility. The do not look authoritatively, incapable of assuming a leading position. They stick fast and refused to be influenced. They are easily guided only by their private interests. They have natural goodness but look unpolite. They are also iobstinate and selfish. They are likely to speculate and they profess their greed as a virtue."
@@ -123,7 +123,7 @@ enum Animal : Int {
 
     :returns: the String telling the lucky colors for the animal type
     */
-    func luckyColors()-> String {
+    public func luckyColors()-> String {
         switch self {
             case .Rat:
                 return "blue, golden, green"
@@ -161,7 +161,7 @@ enum Animal : Int {
 Enum for the Zodiac symbol
 
 */
-enum Zodiac : Int {
+public enum Zodiac : Int {
     case Aries
     case Taurus
     case Gemini
@@ -180,7 +180,7 @@ enum Zodiac : Int {
 
     :returns: The String value for the Zodiac type
     */
-    func string() -> String {
+    public func string() -> String {
         switch self {
             case .Aries: return "Aries"
             case .Taurus: return "Taurus"
@@ -198,7 +198,7 @@ enum Zodiac : Int {
     }
 }
 
-extension NSDate {
+public extension NSDate {
 
     convenience init(string: String) {
         let formatter = NSDateFormatter()
@@ -212,7 +212,7 @@ extension NSDate {
 
     :returns: The Zodiac symbol associated to the NSDate object
     */
-    func getZodiacSign()-> Zodiac {
+    public func getZodiacSign()-> Zodiac {
         let dates = ["March 20", "April 19", "May 20", "June 20", "July 22", "August 22", "September 23", "October 22", "November 21", "December 21", "January 19", "February 18"]
         for i in 0...11{
             let date = NSDate(string: dates[i])
@@ -231,7 +231,7 @@ extension NSDate {
 
     :returns: The Animal type enumerated value
     */
-    func chineseZodiacAnimal()-> Animal {
+    public func chineseZodiacAnimal()-> Animal {
         let startS = "1924"
         let f = NSDateFormatter()
         f.dateFormat = "yyyy"
