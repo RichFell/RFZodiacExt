@@ -31,6 +31,7 @@
 		9B1FC5091AAA063300CB3FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1FC50A1AAA063300CB3FFC /* RFZodiacExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFZodiacExtTests.swift; sourceTree = "<group>"; };
 		9B1FC5141AAA065B00CB3FFC /* NSDateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExt.swift; sourceTree = "<group>"; };
+		9B1FC5161AAA07AA00CB3FFC /* ZodiacPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ZodiacPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		9B1FC4EE1AAA063200CB3FFC = {
 			isa = PBXGroup;
 			children = (
+				9B1FC5161AAA07AA00CB3FFC /* ZodiacPlayground.playground */,
 				9B1FC4FA1AAA063200CB3FFC /* RFZodiacExt */,
 				9B1FC5071AAA063300CB3FFC /* RFZodiacExtTests */,
 				9B1FC4F91AAA063200CB3FFC /* Products */,
