@@ -48,6 +48,7 @@ public enum Animal : Int {
         }
     }
 
+    //From http://www.travelchinaguide.com/intro/social_customs/zodiac/
 
     /**
     The personality Strenghts for the Animal type
@@ -194,6 +195,13 @@ public enum Zodiac : Int {
         }
     }
 
+    //From http://neurolove.me/post/29034134717/zodiac-signs-strengths-and-weaknesses
+
+    /**
+    The strengths for the Zodiac type
+
+    :returns: The String for the strengths
+    */
     public func strengths()->String {
         switch self {
         case .Aries:
@@ -223,6 +231,11 @@ public enum Zodiac : Int {
         }
     }
 
+    /**
+    The weaknesses of the Zodiac type
+
+    :returns: The String value of the weaknesses
+    */
     public func weaknesses()->String {
         switch self {
         case .Aries:
