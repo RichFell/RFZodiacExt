@@ -31,7 +31,7 @@ public enum Animal : Int {
 
     :returns: the String value for the Animal type
     */
-    public func string()->String {
+    public func name()->String {
         switch self {
         case .Rat: return "Rat"
         case .Ox: return "Ox"
@@ -178,7 +178,7 @@ public enum Zodiac : Int {
 
     :returns: The String value for the Zodiac type
     */
-    public func string() -> String {
+    public func name() -> String {
         switch self {
         case .Aries: return "Aries"
         case .Taurus: return "Taurus"
