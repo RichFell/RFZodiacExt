@@ -84,13 +84,6 @@ public extension NSDate {
         return false
     }
 
-    private convenience init(date: NSDate) {
-        self.init()
-        let f = NSDateFormatter()
-        f.dateFormat = "MM dd yyyy"
-
-    }
-
     private func formatDateForZodiac()-> NSDate {
         let df = NSDateFormatter()
         df.dateFormat = "MMM d"
