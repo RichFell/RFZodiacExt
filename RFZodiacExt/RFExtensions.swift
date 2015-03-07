@@ -10,7 +10,7 @@ import Foundation
 
 public extension NSDate {
 
-    convenience init(string: String) {
+    private convenience init(string: String) {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MMM d"
         let date = formatter.dateFromString(string)
@@ -22,13 +22,13 @@ public extension NSDate {
 
     :returns: The Zodiac symbol associated to the NSDate object
     */
-    public func getZodiacSign()-> Zodiac {
+    public func zodiacSign()-> Zodiac {
         let dates = ["March 20", "April 19", "May 20", "June 20", "July 22", "August 22", "September 23", "October 22", "November 21", "December 21", "January 19", "February 18"]
         for i in 0...11{
             let date = NSDate(string: dates[i])
             let second = i < 11 ? dates[i + 1] : dates[0] as String
             let sD = NSDate(string: second)
-            let d = self.formatDate()
+            let d = self.formatDateForZodiac()
             if d.compare(date) == NSComparisonResult.OrderedDescending && d.compare(sD) == .OrderedAscending {
                 return Zodiac(rawValue: i)!
             }
@@ -52,7 +52,46 @@ public extension NSDate {
         return Animal(rawValue: y % 12)!
     }
 
-    private func formatDate()-> NSDate {
+    /**
+    Compares if a NSDate object is between two other dates.
+
+    :param: firstDate  The earlier date to check if the NSDate is after this date.
+    :param: secondDate The later date to see if the NSDate object is before this date
+
+    :returns: Boolean value to tell whether the date being evaluated is between the two other dates
+    */
+    func checkIfDateIsBetween(#firstDate: NSDate, secondDate: NSDate)-> Bool {
+        let first = NSDate(date: firstDate)
+        let second = NSDate(date: secondDate)
+        let d = NSDate(date: self)
+        if d.compare(first) == .OrderedDescending && d.compare(second) == .OrderedAscending {
+            return true
+        }
+
+        return false
+    }
+
+    private convenience init(date: NSDate) {
+        let f = NSDateFormatter()
+        f.dateFormat = "MM dd yyyy"
+        let s = f.stringFromDate(date)
+        let d = f.dateFromString(s)!
+        self.init(timeInterval: 0, sinceDate: d)
+    }
+
+    public func checkIfDateIsBetween(#firstDate: NSDate, secondDate: NSDate)-> Bool {
+
+        return false
+    }
+
+    private convenience init(date: NSDate) {
+        self.init()
+        let f = NSDateFormatter()
+        f.dateFormat = "MM dd yyyy"
+
+    }
+
+    private func formatDateForZodiac()-> NSDate {
         let df = NSDateFormatter()
         df.dateFormat = "MMM d"
         let s = df.stringFromDate(self)

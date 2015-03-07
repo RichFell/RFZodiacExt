@@ -204,30 +204,30 @@ public enum Zodiac : Int {
     */
     public func strengths()->String {
         switch self {
-        case .Aries:
-            return "Courage, determination, self-confidence, enthusiasm."
-        case .Taurus:
-            return "Dependable, patient, musical, practical."
-        case .Gemini:
-            return "Curiosity, ability to share ideas, adaptable, affectionate, kind."
-        case .Cancer:
-            return "Compassion, emotional sensitivity, fierce protection of loved ones, tenacity."
-        case .Leo:
-            return "Warmth, humor, pride, joy, creativity, passion, generosity."
-        case .Virgo:
-            return "Practical, loyal, hardworking, analytical, kind."
-        case .Libra:
-            return "Social, fair-minded, cooperative, diplomatic, gracious."
-        case .Scorpio:
-            return "Passionate, stubborn, resourceful, brave, a true friend."
-        case .Sagittarius:
-            return "Great sense of humor, idealistic, generous."
-        case .Capricorn:
-            return "Responsible, good managers, disciplined, self-control, dark sense of humor."
-        case .Aquarius:
-            return "Progressive, original, humanitarian, independent."
-        case .Pisces:
-            return "Intuitive, compassionate, artistic, gentle, wise, musical."
+            case .Aries:
+                return "Courage, determination, self-confidence, enthusiasm."
+            case .Taurus:
+                return "Dependable, patient, musical, practical."
+            case .Gemini:
+                return "Curiosity, ability to share ideas, adaptable, affectionate, kind."
+            case .Cancer:
+                return "Compassion, emotional sensitivity, fierce protection of loved ones, tenacity."
+            case .Leo:
+                return "Warmth, humor, pride, joy, creativity, passion, generosity."
+            case .Virgo:
+                return "Practical, loyal, hardworking, analytical, kind."
+            case .Libra:
+                return "Social, fair-minded, cooperative, diplomatic, gracious."
+            case .Scorpio:
+                return "Passionate, stubborn, resourceful, brave, a true friend."
+            case .Sagittarius:
+                return "Great sense of humor, idealistic, generous."
+            case .Capricorn:
+                return "Responsible, good managers, disciplined, self-control, dark sense of humor."
+            case .Aquarius:
+                return "Progressive, original, humanitarian, independent."
+            case .Pisces:
+                return "Intuitive, compassionate, artistic, gentle, wise, musical."
         }
     }
 
@@ -238,30 +238,30 @@ public enum Zodiac : Int {
     */
     public func weaknesses()->String {
         switch self {
-        case .Aries:
-            return "Impatience, silly arguments, allowing fear to limit choices."
-        case .Taurus:
-            return "Stubborn, uncompromising, possessive."
-        case .Gemini:
-            return "Scattering energy in too many places at once, fickle in love, nervous, short attention span."
-        case .Cancer:
-            return "Manipulative, indirect conflict, clinging to the past, insecure, packrat."
-        case .Leo:
-            return "Arrogance, stubbornness, inflexibility, self-centeredness, laziness."
-        case .Virgo:
-            return "Worry, shyness, overly critical of self and others, all work and no play."
-        case .Libra:
-            return "Indecisive, will carry a grudge, avoids confrontations, self-pity"
-        case .Scorpio:
-            return "Jealous, distrusting, secretive, violent, caustic"
-        case .Sagittarius:
-            return "Will say anything no matter how undiplomatic, promises more than can deliver, can be impatient to the point of rudeness."
-        case .Capricorn:
-            return "Know-it-all, unforgiving, condescending, expecting the worst."
-        case .Aquarius:
-            return "Runs from emotional expression, uncompromising, temperamental, aloof."
-        case .Pisces:
-            return "Can be a victim or martyr, fearful, overly trusting, sad, desire to escape reality."
+            case .Aries:
+                return "Impatience, silly arguments, allowing fear to limit choices."
+            case .Taurus:
+                return "Stubborn, uncompromising, possessive."
+            case .Gemini:
+                return "Scattering energy in too many places at once, fickle in love, nervous, short attention span."
+            case .Cancer:
+                return "Manipulative, indirect conflict, clinging to the past, insecure, packrat."
+            case .Leo:
+                return "Arrogance, stubbornness, inflexibility, self-centeredness, laziness."
+            case .Virgo:
+                return "Worry, shyness, overly critical of self and others, all work and no play."
+            case .Libra:
+                return "Indecisive, will carry a grudge, avoids confrontations, self-pity"
+            case .Scorpio:
+                return "Jealous, distrusting, secretive, violent, caustic"
+            case .Sagittarius:
+                return "Will say anything no matter how undiplomatic, promises more than can deliver, can be impatient to the point of rudeness."
+            case .Capricorn:
+                return "Know-it-all, unforgiving, condescending, expecting the worst."
+            case .Aquarius:
+                return "Runs from emotional expression, uncompromising, temperamental, aloof."
+            case .Pisces:
+                return "Can be a victim or martyr, fearful, overly trusting, sad, desire to escape reality."
         }
     }
 }
