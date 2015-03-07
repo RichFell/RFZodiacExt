@@ -60,7 +60,7 @@ public extension NSDate {
 
     :returns: Boolean value to tell whether the date being evaluated is between the two other dates
     */
-    func checkIfDateIsBetween(#firstDate: NSDate, secondDate: NSDate)-> Bool {
+    public func checkIfDateIsBetween(#firstDate: NSDate, secondDate: NSDate)-> Bool {
         let first = NSDate(date: firstDate)
         let second = NSDate(date: secondDate)
         let d = NSDate(date: self)
