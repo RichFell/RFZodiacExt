@@ -254,6 +254,40 @@ public enum Zodiac : Int {
             return "Can be a victim or martyr, fearful, overly trusting, sad, desire to escape reality."
         }
     }
+
+    /**
+    The compatable symbols for the Zodiac type.
+
+    :returns: Array of the compatable Zodiac types.
+    */
+    public func compatableTypes()-> [Zodiac] {
+        switch self {
+            case .Aries:
+                return [.Gemini, .Sagittarius, .Leo, .Aquarius]
+            case .Taurus:
+                return [.Capricorn, .Pisces, .Virgo, .Cancer]
+            case .Gemini:
+                return [.Aquarius, .Libra, .Aries, .Leo]
+            case .Cancer:
+                return [.Pisces, .Taurus, .Scorpio, .Virgo]
+            case .Leo:
+                return [.Sagittarius, .Aries, .Gemini, .Libra]
+            case .Virgo:
+                return [.Taurus, .Capricorn, .Cancer]
+            case .Libra:
+                return [.Gemini, .Aquarius, .Leo, .Sagittarius]
+            case .Scorpio:
+                return [.Pisces, .Cancer, .Capricorn, .Virgo]
+            case .Sagittarius:
+                return [.Leo, .Aries, .Libra, .Aquarius]
+            case .Capricorn:
+                return [.Taurus, .Virgo, .Pisces, .Scorpio]
+            case .Aquarius:
+                return [.Gemini, .Libra, .Sagittarius, .Aries]
+            case .Pisces:
+                return [.Cancer, .Scorpio, .Taurus, .Capricorn]
+        }
+    }
 }
 
 
@@ -389,6 +423,7 @@ let zodiac = date.zodiacSign()
 zodiac.name()
 zodiac.strengths()
 zodiac.weaknesses()
+zodiac.compatableTypes()
 
 let one = NSDate(string: "January 20 2015")
 let two = NSDate(string: "June 30 2199")
@@ -400,3 +435,5 @@ let c = date.checkIfDateIsBetween(firstDate: two, secondDate: one)
 let s = date.stringMMddyyyyFormat()
 
 let s2 = date.stringMMMMddyyyyFormat()
+
+
