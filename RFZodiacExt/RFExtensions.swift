@@ -64,6 +64,28 @@ public extension NSDate {
         return false
     }
 
+    /**
+    Instance method to format a NSDate into a MM/dd/yyyy format
+
+    :returns: String showing date formatted to MM/dd/yyyy
+    */
+    public func stringMMddyyyyFormat()-> String {
+        let f = NSDateFormatter()
+        f.dateFormat = "MM/dd/yyyy"
+        return f.stringFromDate(self)
+    }
+
+    /**
+    Instance method to format a NSDate into MMMM dd, yyyy format
+
+    :returns: String with date formatted as MMMM dd, yyyy
+    */
+    public func stringMMMMddyyyyFormat()-> String {
+        let f = NSDateFormatter()
+        f.dateFormat = "MMMM dd, yyyy"
+        return f.stringFromDate(self)
+    }
+
     private convenience init(date: NSDate) {
         let f = NSDateFormatter()
         f.dateFormat = "MM dd yyyy"
