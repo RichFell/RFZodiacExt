@@ -298,4 +298,38 @@ public enum Zodiac : Int {
             return [.Cancer, .Scorpio, .Taurus, .Capricorn]
         }
     }
+
+    /**
+    The symbol for the Zodiac type
+
+    :returns: The String symbol for the Zodiac type
+    */
+    public func symbol()-> String {
+        switch self {
+            case .Aries:
+                return "♈"
+            case .Taurus:
+                return "♉"
+            case .Gemini:
+                return "♊"
+            case .Cancer:
+                return "♋"
+            case .Leo:
+                return "♌"
+            case .Virgo:
+                return "♍"
+            case .Libra:
+                return "♎"
+            case .Scorpio:
+                return "♏"
+            case .Sagittarius:
+                return "♐"
+            case .Capricorn:
+                return "♑"
+            case .Aquarius:
+                return "♒"
+            case .Pisces:
+                return "♓"
+        }
+    }
 }

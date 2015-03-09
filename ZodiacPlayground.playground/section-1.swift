@@ -116,30 +116,30 @@ public enum Animal : Int {
     */
     public func luckyColors()-> String {
         switch self {
-        case .Rat:
-            return "blue, golden, green"
-        case .Ox:
-            return "blue, red, purple"
-        case .Tiger:
-            return "blue, grey, white, orange"
-        case .Rabbit:
-            return "red, pink, purple, blue"
-        case .Dragon:
-            return "golden, silver, hoary"
-        case .Snake:
-            return "red, light yellow, black"
-        case .Horse:
-            return "brown, yellow, purple"
-        case .Goat:
-            return "green, red, purple"
-        case .Monkey:
-            return "white, golden, blue"
-        case .Rooster:
-            return "golden, brown, brownish yellow, yellow"
-        case .Dog:
-            return "green, red, purple"
-        case .Pig:
-            return "yellow, grey, brown, golden"
+            case .Rat:
+                return "blue, golden, green"
+            case .Ox:
+                return "blue, red, purple"
+            case .Tiger:
+                return "blue, grey, white, orange"
+            case .Rabbit:
+                return "red, pink, purple, blue"
+            case .Dragon:
+                return "golden, silver, hoary"
+            case .Snake:
+                return "red, light yellow, black"
+            case .Horse:
+                return "brown, yellow, purple"
+            case .Goat:
+                return "green, red, purple"
+            case .Monkey:
+                return "white, golden, blue"
+            case .Rooster:
+                return "golden, brown, brownish yellow, yellow"
+            case .Dog:
+                return "green, red, purple"
+            case .Pig:
+                return "yellow, grey, brown, golden"
         }
     }
 }
@@ -288,6 +288,35 @@ public enum Zodiac : Int {
                 return [.Cancer, .Scorpio, .Taurus, .Capricorn]
         }
     }
+
+    public func symbol()-> String {
+        switch self {
+        case .Aries:
+            return "♈"
+        case .Taurus:
+            return "♉"
+        case .Gemini:
+            return "♊"
+        case .Cancer:
+            return "♋"
+        case .Leo:
+            return "♌"
+        case .Virgo:
+            return "♍"
+        case .Libra:
+            return "♎"
+        case .Scorpio:
+            return "♏"
+        case .Sagittarius:
+            return "♐"
+        case .Capricorn:
+            return "♑"
+        case .Aquarius:
+            return "♒"
+        case .Pisces:
+            return "♓"
+        }
+    }
 }
 
 
@@ -424,6 +453,7 @@ zodiac.name()
 zodiac.strengths()
 zodiac.weaknesses()
 zodiac.compatableTypes()
+zodiac.symbol()
 
 let one = NSDate(string: "January 20 2015")
 let two = NSDate(string: "June 30 2199")
@@ -435,5 +465,3 @@ let c = date.checkIfDateIsBetween(firstDate: two, secondDate: one)
 let s = date.stringMMddyyyyFormat()
 
 let s2 = date.stringMMMMddyyyyFormat()
-
-
