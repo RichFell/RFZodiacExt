@@ -13,7 +13,7 @@ public extension NSDate {
     /**
     Instance method that returns the Zodiac sign for the NSDate that it is called on.
 
-    :returns: The Zodiac symbol associated to the NSDate object
+    - returns: The Zodiac symbol associated to the NSDate object
     */
     public func zodiacSign()-> Zodiac {
         let dates = ["March 20", "April 19", "May 20", "June 20", "July 22", "August 22", "September 23", "October 22", "November 21", "December 21", "January 19", "February 18"]
@@ -32,7 +32,7 @@ public extension NSDate {
     /**
     Instance method that returns the Chinese Animal associated to the NSDate entered
 
-    :returns: The Animal type enumerated value
+    - returns: The Animal type enumerated value
     */
     public func chineseZodiacAnimal()-> Animal {
         let startS = "1924"
@@ -48,12 +48,12 @@ public extension NSDate {
     /**
     Compares if a NSDate object is between two other dates. All dates should be formatted like "MMM dd yyyy"
 
-    :param: firstDate  The earlier date to check if the NSDate is after this date.
-    :param: secondDate The later date to see if the NSDate object is before this date
+    - parameter firstDate:  The earlier date to check if the NSDate is after this date.
+    - parameter secondDate: The later date to see if the NSDate object is before this date
 
-    :returns: Boolean value to tell whether the date being evaluated is between the two other dates
+    - returns: Boolean value to tell whether the date being evaluated is between the two other dates
     */
-    public func checkIfDateIsBetween(#firstDate: NSDate, secondDate: NSDate)-> Bool {
+    public func checkIfDateIsBetween(firstDate firstDate: NSDate, secondDate: NSDate)-> Bool {
         let first = NSDate(date: firstDate)
         let second = NSDate(date: secondDate)
         let d = NSDate(date: self)
@@ -67,7 +67,7 @@ public extension NSDate {
     /**
     Instance method to format a NSDate into a MM/dd/yyyy format
 
-    :returns: String showing date formatted to MM/dd/yyyy
+    - returns: String showing date formatted to MM/dd/yyyy
     */
     public func stringMMddyyyyFormat()-> String {
         let f = NSDateFormatter()
@@ -78,7 +78,7 @@ public extension NSDate {
     /**
     Instance method to format a NSDate into MMMM dd, yyyy format
 
-    :returns: String with date formatted as MMMM dd, yyyy
+    - returns: String with date formatted as MMMM dd, yyyy
     */
     public func stringMMMMddyyyyFormat()-> String {
         let f = NSDateFormatter()
