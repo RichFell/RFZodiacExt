@@ -29,7 +29,7 @@ public enum Animal : Int {
     /**
     This method can be called to return the String value for the associated Animal type
 
-    :returns: the String value for the Animal type
+    - returns: the String value for the Animal type
     */
     public func name()->String {
         switch self {
@@ -53,7 +53,7 @@ public enum Animal : Int {
     /**
     The personality Strenghts for the Animal type
 
-    :returns: The String explaining the personality strengths for the Animal
+    - returns: The String explaining the personality strengths for the Animal
     */
     public func strengths()->String {
         switch self {
@@ -87,7 +87,7 @@ public enum Animal : Int {
     /**
     The personality weaknesses for the Animal type
 
-    :returns: The string write-up of the Animal type's personality weaknesses
+    - returns: The string write-up of the Animal type's personality weaknesses
     */
     public func weaknesses()->String {
         switch self {
@@ -122,7 +122,7 @@ public enum Animal : Int {
     /**
     The lucky colors for the Animal type
 
-    :returns: the String telling the lucky colors for the animal type
+    - returns: the String telling the lucky colors for the animal type
     */
     public func luckyColors()-> String {
         switch self {
@@ -176,7 +176,7 @@ public enum Zodiac : Int {
     /**
     String representation of the Zodiac type
 
-    :returns: The String value for the Zodiac type
+    - returns: The String value for the Zodiac type
     */
     public func name() -> String {
         switch self {
@@ -200,7 +200,7 @@ public enum Zodiac : Int {
     /**
     The strengths for the Zodiac type
 
-    :returns: The String for the strengths
+    - returns: The String for the strengths
     */
     public func strengths()->String {
         switch self {
@@ -234,7 +234,7 @@ public enum Zodiac : Int {
     /**
     The weaknesses of the Zodiac type
 
-    :returns: The String value of the weaknesses
+    - returns: The String value of the weaknesses
     */
     public func weaknesses()->String {
         switch self {
@@ -268,7 +268,7 @@ public enum Zodiac : Int {
     /**
     The compatable symbols for the Zodiac type.
 
-    :returns: Array of the compatable Zodiac types.
+    - returns: Array of the compatable Zodiac types.
     */
     public func compatableTypes()-> [Zodiac] {
         switch self {
@@ -302,7 +302,7 @@ public enum Zodiac : Int {
     /**
     The symbol for the Zodiac type
 
-    :returns: The String symbol for the Zodiac type
+    - returns: The String symbol for the Zodiac type
     */
     public func symbol()-> String {
         switch self {
