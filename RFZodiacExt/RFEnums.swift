@@ -194,6 +194,29 @@ public enum Zodiac : Int {
         case .Pisces: return "Pisces"
         }
     }
+    
+    /**
+     Instance method that returns a string of the dates spanned by the Zodiac object passed in
+     
+     - parameter zodiacSign: Zodiak object
+     - returns: String showing date span of Zodiac Sign formatted to "startDate - endDate"
+     */
+    public func dateSpanOfZodiac(zodiakSign: Zodiac)-> String {
+        switch self {
+        case .Aries: return "March 21st - April 19th"
+        case .Taurus: return "April 20th - May 20th"
+        case .Gemini: return "May 21st - June 20th"
+        case .Cancer: return "June 21st - July 22nd"
+        case .Leo: return "July 23rd - August 22nd"
+        case .Virgo: return "August 23rd - Sept 22nd"
+        case .Libra: return "Sept 23rd - Oct 22nd"
+        case .Scorpio: return "Oct 23rd - Nov 21st"
+        case .Sagittarius: return "Nov 22nd - Dec 21st"
+        case .Capricorn: return "Dec 22nd - Jan 19th"
+        case .Aquarius: return "Jan 20th - Feb 18th"
+        case .Pisces: return "Feb 19th - March 20th"
+        }
+    }
 
     //From http://neurolove.me/post/29034134717/zodiac-signs-strengths-and-weaknesses
 
