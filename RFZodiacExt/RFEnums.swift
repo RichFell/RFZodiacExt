@@ -322,7 +322,7 @@ public enum Zodiac : Int {
     }
 
     /**
-    The symbol for the Zodiac type
+    The unicode symbol for the Zodiac type
 
     - returns: The String symbol for the Zodiac type
     */
