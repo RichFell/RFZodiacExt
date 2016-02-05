@@ -70,10 +70,16 @@ public extension NSDate {
     - returns: String showing date formatted to MM/dd/yyyy
     */
     public func stringMMddyyyyFormat()-> String {
-        let f = NSDateFormatter()
-        f.dateFormat = "MM/dd/yyyy"
+        let f = NSDate.MMddyyyyStaticFormatter
         return f.stringFromDate(self)
     }
+
+    // static keyword uses dispatch_once, ensuring our date formatter doesn't cause performance issues
+    private static var MMddyyyyStaticFormatter: NSDateFormatter = {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        return formatter
+    }()
 
     /**
     Instance method to format a NSDate into MMMM dd, yyyy format
