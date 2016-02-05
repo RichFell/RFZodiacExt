@@ -198,10 +198,9 @@ public enum Zodiac : Int {
     /**
      Instance method that returns a string of the dates spanned by the Zodiac object passed in
      
-     - parameter zodiacSign: Zodiak object
      - returns: String showing date span of Zodiac Sign formatted to "startDate - endDate"
      */
-    public func dateSpanOfZodiac(zodiakSign: Zodiac)-> String {
+    public func dateSpanOfZodiac()-> String {
         switch self {
         case .Aries: return "March 21st - April 19th"
         case .Taurus: return "April 20th - May 20th"
